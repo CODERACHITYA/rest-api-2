@@ -1,7 +1,6 @@
-require('dotenv').config()
-const express = require('express')
+import express from 'express';
+import { PORT } from './config'
 const app = express();
-const port = process.env.PORT || 4000;
-app.listen(port, () => {
-    console.log(`On Port ${port}`)
+app.listen(PORT, () => {
+    console.log(`On Port ${PORT}`)
 })
